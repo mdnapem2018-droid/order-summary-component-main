@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --blue-100: hsl(225, 100%, 94%);
+    --blue-700: hsl(245, 75%, 52%);
+    --blue-50: hsl(225, 100%, 98%);
+    --gray-600: hsl(224, 23%, 55%);
+    --blue-950: hsl(223, 47%, 23%);
+}
+*,*::after,*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p{font-size: 16px;
+}
+
+html,body{
+    width: 1440px;
+    height: 100%;
+    font-family: "Red Hat Display", sans-serif;
+    background-color: var(--blue-100);
+}
+#parent{
+    background-color: var(--blue-50);
+    margin: 20px auto;
+    width: 550px;
+    border-radius: 20px;
+}
+#parent img{
+    padding-bottom: 55px;
+    border-radius: 20px;
+    width: 100%;
+}
+#parent .child {
+    text-align: center;
+    padding: 0px 50px;
+}
+#parent .child h1{
+padding-bottom: 35px;
+font-weight: 900;
+font-size: 40px;    
+}
+#parent .child p{
+padding-bottom: 55px;  
+}
+#parent .child .annual_div img {
+padding: 0;
+width: 50px;
+}
+#parent .child .annual_div  {
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--blue-100);
+    padding: 20px 50px;
+    border-radius: 15px;
+}
+#parent .child .annual_div a {
+    display: block;
+  /* justify-self: flex-end; */
+  margin-left: auto;
+  font-weight: 700;
+}
+#parent .child .annual_div a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+#parent .child .annual_div h2 {
+    font-weight: 900;
+}
+#parent .child .annual_div h2 span {
+    display: block;
+    font-size: 18px;
+    color: var(--gray-600);
+}
+#parent .child button {
+    width: 100%;
+    padding: 20px ;
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: var(--blue-700);
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    border: none;
+}
+#parent .child button:hover {
+    background-color: var(--blue-950);
+    cursor: pointer;
+}
+#parent .child h6 {
+  color: var(--gray-600);
+  font-weight: 700;
+  font-size: 18px;
+  padding: 30px 0;
+}
